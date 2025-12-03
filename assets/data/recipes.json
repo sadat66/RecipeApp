@@ -1,0 +1,356 @@
+[
+  {
+    "id": "1",
+    "title": "Spicy Orange Chicken",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?w=800",
+    "description": "Crispy chicken tossed in a sweet and spicy orange sauce.",
+    "ingredients": [
+      "Chicken Breast",
+      "Orange Juice",
+      "Soy Sauce",
+      "Ginger",
+      "Garlic",
+      "Chili Flakes"
+    ],
+    "instructions": "1. Cut chicken into bite-sized pieces.\n2. Batter and fry until golden.\n3. Simmer sauce ingredients.\n4. Toss chicken in sauce."
+  },
+  {
+    "id": "2",
+    "title": "Classic Pumpkin Soup",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=800",
+    "description": "Creamy and comforting pumpkin soup perfect for fall.",
+    "ingredients": [
+      "Pumpkin",
+      "Onion",
+      "Garlic",
+      "Vegetable Broth",
+      "Cream",
+      "Nutmeg"
+    ],
+    "instructions": "1. Roast pumpkin chunks.\n2. Sauté onion and garlic.\n3. Blend pumpkin with broth.\n4. Stir in cream and spices."
+  },
+  {
+    "id": "3",
+    "title": "Carrot Cake Pancakes",
+    "category": "Snack",
+    "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+    "description": "Fluffy pancakes with the flavors of carrot cake.",
+    "ingredients": [
+      "Flour",
+      "Grated Carrots",
+      "Cinnamon",
+      "Nutmeg",
+      "Milk",
+      "Eggs"
+    ],
+    "instructions": "1. Mix dry ingredients.\n2. Whisk wet ingredients.\n3. Combine and fold in carrots.\n4. Cook on griddle."
+  },
+  {
+    "id": "4",
+    "title": "Honey Teriyaki Salmon",
+    "category": "Dinner",
+    "image": "https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg",
+    "description": "Salmon fillet glazed with a sweet and savory honey teriyaki sauce.",
+    "ingredients": [
+      "Salmon",
+      "Olive oil",
+      "Soy Sauce",
+      "Sake",
+      "Sesame Seed"
+    ],
+    "instructions": "1. Mix glaze ingredients.\n2. Pan-fry salmon.\n3. Add glaze and thicken.\n4. Garnish with sesame seeds."
+  },
+  {
+    "id": "5",
+    "title": "Sweet Potato Salad",
+    "category": "Snack",
+    "image": "https://www.themealdb.com/images/media/meals/z458v91763817681.jpg",
+    "description": "Roasted sweet potato salad with a tangy dressing.",
+    "ingredients": [
+      "Sweet Potatoes",
+      "Olive Oil",
+      "Shallots",
+      "Spring Onions",
+      "Chives",
+      "Honey"
+    ],
+    "instructions": "1. Roast sweet potato chunks.\n2. Whisk dressing ingredients.\n3. Toss potatoes with dressing.\n4. Serve warm or cool."
+  },
+  {
+    "id": "6",
+    "title": "Apricot Glazed Pork Chops",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800",
+    "description": "Juicy pork chops with a sticky apricot glaze.",
+    "ingredients": [
+      "Pork Chops",
+      "Apricot Preserves",
+      "Soy Sauce",
+      "Dijon Mustard",
+      "Garlic"
+    ],
+    "instructions": "1. Sear pork chops.\n2. Mix glaze ingredients.\n3. Brush glaze on chops.\n4. Bake until cooked through."
+  },
+  {
+    "id": "7",
+    "title": "Butternut Squash Risotto",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=800",
+    "description": "Creamy risotto with roasted butternut squash.",
+    "ingredients": [
+      "Arborio Rice",
+      "Butternut Squash",
+      "White Wine",
+      "Parmesan Cheese",
+      "Sage"
+    ],
+    "instructions": "1. Roast squash cubes.\n2. Sauté rice and onions.\n3. Add broth gradually.\n4. Stir in squash and cheese."
+  },
+  {
+    "id": "8",
+    "title": "Orange Creamsicle Smoothie",
+    "category": "Snack",
+    "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=800",
+    "description": "Refreshing smoothie that tastes like an orange creamsicle.",
+    "ingredients": [
+      "Orange Juice",
+      "Vanilla Yogurt",
+      "Frozen Banana",
+      "Honey",
+      "Ice"
+    ],
+    "instructions": "1. Combine all ingredients in blender.\n2. Blend until smooth.\n3. Serve immediately."
+  },
+  {
+    "id": "9",
+    "title": "Thai Red Curry",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800",
+    "description": "Spicy and aromatic Thai red curry with vegetables.",
+    "ingredients": [
+      "Red Curry Paste",
+      "Coconut Milk",
+      "Bamboo Shoots",
+      "Bell Peppers",
+      "Basil"
+    ],
+    "instructions": "1. Fry curry paste.\n2. Add coconut milk.\n3. Simmer vegetables.\n4. Garnish with basil."
+  },
+  {
+    "id": "10",
+    "title": "Peach Cobbler",
+    "category": "Dessert",
+    "image": "https://www.themealdb.com/images/media/meals/ssxvup1511387476.jpg",
+    "description": "Warm peach cobbler with a biscuit topping.",
+    "ingredients": [
+      "Peaches",
+      "Sugar",
+      "Flour",
+      "Butter",
+      "Milk",
+      "Cinnamon"
+    ],
+    "instructions": "1. Slice peaches and toss with sugar.\n2. Mix batter for topping.\n3. Pour batter over peaches.\n4. Bake until golden."
+  },
+  {
+    "id": "11",
+    "title": "Turmeric Rice",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800",
+    "description": "Vibrant yellow rice flavored with turmeric and spices.",
+    "ingredients": [
+      "Basmati Rice",
+      "Turmeric",
+      "Cumin",
+      "Cardamom",
+      "Chicken Broth"
+    ],
+    "instructions": "1. Rinse rice.\n2. Sauté spices.\n3. Cook rice in broth with spices.\n4. Fluff with fork."
+  },
+  {
+    "id": "12",
+    "title": "Avocado Dip with Potatoes",
+    "category": "Snack",
+    "image": "https://www.themealdb.com/images/media/meals/flrajf1762341295.jpg",
+    "description": "Creamy avocado dip served with roasted new potatoes.",
+    "ingredients": [
+      "Avocado",
+      "Natural Yoghurt",
+      "Lime",
+      "Baby New Potatoes",
+      "Olive Oil",
+      "Cumin Seeds"
+    ],
+    "instructions": "1. Blend avocado, yogurt, and lime.\n2. Boil then roast potatoes.\n3. Toss potatoes with spices.\n4. Serve with dip."
+  },
+  {
+    "id": "13",
+    "title": "Papaya Boat",
+    "category": "Snack",
+    "image": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?w=800",
+    "description": "Breakfast papaya filled with yogurt and granola.",
+    "ingredients": [
+      "Papaya",
+      "Greek Yogurt",
+      "Granola",
+      "Berries",
+      "Honey"
+    ],
+    "instructions": "1. Halve papaya and scoop seeds.\n2. Fill with yogurt.\n3. Top with granola and berries.\n4. Drizzle with honey."
+  },
+  {
+    "id": "14",
+    "title": "Honey Glazed Carrots",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=800",
+    "description": "Sweet and savory roasted carrots.",
+    "ingredients": [
+      "Carrots",
+      "Honey",
+      "Butter",
+      "Thyme",
+      "Salt"
+    ],
+    "instructions": "1. Peel and cut carrots.\n2. Melt butter and honey.\n3. Toss carrots in mixture.\n4. Roast until tender."
+  },
+  {
+    "id": "15",
+    "title": "Shrimp Scampi",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1625943553852-781c6dd46faa?w=800",
+    "description": "Garlicky shrimp pasta with lemon.",
+    "ingredients": [
+      "Shrimp",
+      "Linguine",
+      "Garlic",
+      "Butter",
+      "White Wine",
+      "Lemon"
+    ],
+    "instructions": "1. Cook pasta.\n2. Sauté garlic and shrimp.\n3. Deglaze with wine.\n4. Toss with pasta and lemon."
+  },
+  {
+    "id": "16",
+    "title": "Lentil Soup",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800",
+    "description": "Hearty lentil soup with vegetables.",
+    "ingredients": [
+      "Lentils",
+      "Carrots",
+      "Celery",
+      "Onion",
+      "Tomatoes",
+      "Spinach"
+    ],
+    "instructions": "1. Sauté veggies.\n2. Add lentils and broth.\n3. Simmer until soft.\n4. Stir in spinach."
+  },
+  {
+    "id": "17",
+    "title": "Tangerine Beef",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?w=800",
+    "description": "Crispy beef strips in a tangerine sauce.",
+    "ingredients": [
+      "Beef Steak",
+      "Tangerine Peel",
+      "Soy Sauce",
+      "Sugar",
+      "Cornstarch"
+    ],
+    "instructions": "1. Coat beef in cornstarch.\n2. Fry until crispy.\n3. Make sauce with juice and peel.\n4. Toss beef in sauce."
+  },
+  {
+    "id": "18",
+    "title": "Passion Fruit Mousse",
+    "category": "Snack",
+    "image": "https://www.themealdb.com/images/media/meals/gkcdpl1764441325.jpg",
+    "description": "Light and airy passion fruit mousse.",
+    "ingredients": [
+      "Passion Fruit Pulp",
+      "Sugar",
+      "Condensed Milk",
+      "Egg White",
+      "Mint"
+    ],
+    "instructions": "1. Mix pulp, sugar, and gelatin.\n2. Stir in condensed milk.\n3. Fold in beaten egg whites.\n4. Chill before serving."
+  },
+  {
+    "id": "19",
+    "title": "Persimmon Salad",
+    "category": "Snack",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800",
+    "description": "Winter salad with sweet persimmons.",
+    "ingredients": [
+      "Persimmons",
+      "Arugula",
+      "Pomegranate Seeds",
+      "Goat Cheese",
+      "Walnuts"
+    ],
+    "instructions": "1. Slice persimmons.\n2. Arrange on arugula.\n3. Sprinkle toppings.\n4. Dress with vinaigrette."
+  },
+  {
+    "id": "20",
+    "title": "Macaroni and Cheese",
+    "category": "Dinner",
+    "image": "https://images.unsplash.com/photo-1543339494-b4cd4f7ba686?w=800",
+    "description": "Classic creamy mac and cheese.",
+    "ingredients": [
+      "Macaroni",
+      "Cheddar Cheese",
+      "Milk",
+      "Butter",
+      "Flour"
+    ],
+    "instructions": "1. Cook macaroni.\n2. Make roux with butter and flour.\n3. Whisk in milk and cheese.\n4. Combine with pasta."
+  },
+  {
+    "id": "21",
+    "title": "Tunisian Orange Cake",
+    "category": "Dessert",
+    "image": "https://www.themealdb.com/images/media/meals/y4jpgq1560459207.jpg",
+    "description": "Moist and fragrant orange cake with olive oil.",
+    "ingredients": [
+      "Orange",
+      "Sugar",
+      "Olive Oil",
+      "Flour",
+      "Eggs",
+      "Baking Powder"
+    ],
+    "instructions": "1. Puree orange with peel.\n2. Mix with sugar and oil.\n3. Beat eggs and fold in flour.\n4. Bake at 375°F for 50 mins."
+  },
+  {
+    "id": "22",
+    "title": "Pumpkin Pie",
+    "category": "Dessert",
+    "image": "https://www.themealdb.com/images/media/meals/usuqtp1511385394.jpg",
+    "description": "Classic spiced pumpkin pie.",
+    "ingredients": [
+      "Pumpkin Puree",
+      "Pie Crust",
+      "Condensed Milk",
+      "Eggs",
+      "Pumpkin Spice"
+    ],
+    "instructions": "1. Mix filling ingredients.\n2. Pour into crust.\n3. Bake at 425°F for 15 mins.\n4. Reduce to 350°F and bake 40 mins."
+  },
+  {
+    "id": "23",
+    "title": "Caramel Apple",
+    "category": "Dessert",
+    "image": "https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?w=800",
+    "description": "Crisp apples covered in sticky caramel.",
+    "ingredients": [
+      "Apples",
+      "Caramels",
+      "Heavy Cream",
+      "Popsicle Sticks",
+      "Nuts (Optional)"
+    ],
+    "instructions": "1. Wash and dry apples.\n2. Melt caramels with cream.\n3. Dip apples in caramel.\n4. Roll in toppings."
+  }
+]
