@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { FlatList, Image, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import recipesData from '../assets/data/recipes.json';
 
 const CategoryScreen = ({ navigation, route, category }) => {
@@ -42,9 +42,11 @@ const CategoryScreen = ({ navigation, route, category }) => {
         </TouchableOpacity>
     );
 
+    const insets = useSafeAreaInsets();
+
     return (
-        <SafeAreaView style={styles.container} edges={['top', 'left', 'right']}>
-            <StatusBar barStyle="light-content" backgroundColor="#FF8C00" />
+        <View style={[styles.container, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
+            <StatusBar barStyle="dark-content" backgroundColor="#FF8C00" />
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>Zest & Zest 🍊</Text>
                 <Text style={styles.headerSubtitle}>{category} Recipes</Text>
@@ -64,10 +66,10 @@ const CategoryScreen = ({ navigation, route, category }) => {
                 data={recipes}
                 renderItem={renderItem}
                 keyExtractor={item => item.id}
-                contentContainerStyle={styles.listContent}
+                contentContainerStyle={[styles.listContent, { paddingBottom: insets.bottom + 200 }]}
                 showsVerticalScrollIndicator={false}
             />
-        </SafeAreaView>
+        </View>
     );
 };
 
@@ -117,7 +119,6 @@ const styles = StyleSheet.create({
     listContent: {
         padding: 20,
         paddingTop: 30,
-        paddingBottom: 100, // Extra padding for bottom tab bar
     },
     card: {
         backgroundColor: '#FFFFFF',

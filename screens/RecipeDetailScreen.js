@@ -1,15 +1,24 @@
 import { Ionicons } from '@expo/vector-icons'; // Assuming Expo includes vector icons
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
+import { StatusBar } from 'react-native';
 
 const RecipeDetailScreen = ({ route, navigation }) => {
     const { recipe } = route.params;
 
+    const insets = useSafeAreaInsets();
+
     return (
-        <View style={styles.container}>
-            <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        <View style={[styles.container, { paddingBottom: insets.bottom }]}>
+            <StatusBar barStyle="light-content" />
+            <ScrollView contentContainerStyle={[styles.scrollContent, { paddingBottom: insets.bottom + 100 }]} showsVerticalScrollIndicator={false}>
                 <View style={styles.imageContainer}>
                     <Image source={{ uri: recipe.image }} style={styles.image} />
-                    <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
+                    <TouchableOpacity
+                        style={[styles.backButton, { top: insets.top + 20 }]}
+                        onPress={() => navigation.goBack()}
+                    >
                         <Ionicons name="arrow-back" size={24} color="#FFFFFF" />
                     </TouchableOpacity>
                 </View>
@@ -44,7 +53,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
     },
     scrollContent: {
-        paddingBottom: 40,
+        paddingBottom: 60,
     },
     imageContainer: {
         height: 300,
@@ -58,7 +67,6 @@ const styles = StyleSheet.create({
     },
     backButton: {
         position: 'absolute',
-        top: 50,
         left: 20,
         backgroundColor: 'rgba(0,0,0,0.3)',
         padding: 8,

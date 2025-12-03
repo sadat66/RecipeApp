@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import { View, Text, FlatList, Image, TouchableOpacity, StyleSheet, TextInput, StatusBar } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useState } from 'react';
+import { FlatList, Image, StatusBar, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import recipesData from '../assets/data/recipes.json';
 
 const HomeScreen = ({ navigation }) => {
+  const insets = useSafeAreaInsets();
   const [searchQuery, setSearchQuery] = useState('');
   const [recipes, setRecipes] = useState(recipesData);
 
   const handleSearch = (text) => {
     setSearchQuery(text);
-    const filtered = recipesData.filter(item => 
+    const filtered = recipesData.filter(item =>
       item.title.toLowerCase().includes(text.toLowerCase()) ||
       item.ingredients.some(ing => ing.toLowerCase().includes(text.toLowerCase()))
     );
@@ -17,8 +18,8 @@ const HomeScreen = ({ navigation }) => {
   };
 
   const renderItem = ({ item }) => (
-    <TouchableOpacity 
-      style={styles.card} 
+    <TouchableOpacity
+      style={styles.card}
       onPress={() => navigation.navigate('RecipeDetail', { recipe: item })}
       activeOpacity={0.8}
     >
@@ -36,13 +37,13 @@ const HomeScreen = ({ navigation }) => {
   );
 
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#FF8C00" />
+    <View style={[styles.container, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
+      <StatusBar barStyle="dark-content" backgroundColor="#FF8C00" />
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Tasty Orange 🍊</Text>
         <Text style={styles.headerSubtitle}>Find your next favorite meal</Text>
       </View>
-      
+
       <View style={styles.searchContainer}>
         <TextInput
           style={styles.searchInput}
@@ -57,10 +58,10 @@ const HomeScreen = ({ navigation }) => {
         data={recipes}
         renderItem={renderItem}
         keyExtractor={item => item.id}
-        contentContainerStyle={styles.listContent}
+        contentContainerStyle={[styles.listContent, { paddingBottom: insets.bottom + 200 }]}
         showsVerticalScrollIndicator={false}
       />
-    </SafeAreaView>
+    </View>
   );
 };
 

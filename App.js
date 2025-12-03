@@ -3,6 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
+import { View } from 'react-native';
+import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
 import CategoryScreen from './screens/CategoryScreen';
 import RecipeDetailScreen from './screens/RecipeDetailScreen';
 
@@ -15,6 +17,8 @@ const DinnerScreen = (props) => <CategoryScreen {...props} category="Dinner" />;
 const DessertScreen = (props) => <CategoryScreen {...props} category="Dessert" />;
 
 function TabNavigator() {
+    const insets = useSafeAreaInsets();
+
     return (
         <Tab.Navigator
             screenOptions={({ route }) => ({
@@ -31,11 +35,20 @@ function TabNavigator() {
                     paddingBottom: 8,
                     paddingTop: 8,
                     position: 'absolute',
-                    bottom: 20,
+                    bottom: 20 + insets.bottom,
                     width: '90%',
                     marginHorizontal: '5%',
                     borderRadius: 30,
+                    opacity: 1,
                 },
+                tabBarBackground: () => (
+                    <View style={{ 
+                        flex: 1, 
+                        backgroundColor: '#FFFFFF', 
+                        borderRadius: 30,
+                        opacity: 1,
+                    }} />
+                ),
                 tabBarActiveTintColor: '#FF8C00',
                 tabBarInactiveTintColor: '#BDBDBD',
                 tabBarShowLabel: true,
@@ -67,18 +80,20 @@ function TabNavigator() {
 
 export default function App() {
     return (
-        <NavigationContainer>
-            <StatusBar style="light" />
-            <Stack.Navigator
-                initialRouteName="Main"
-                screenOptions={{
-                    headerShown: false,
-                    cardStyle: { backgroundColor: '#FFF3E0' }
-                }}
-            >
-                <Stack.Screen name="Main" component={TabNavigator} />
-                <Stack.Screen name="RecipeDetail" component={RecipeDetailScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <SafeAreaProvider>
+            <NavigationContainer>
+                <StatusBar style="dark" />
+                <Stack.Navigator
+                    initialRouteName="Main"
+                    screenOptions={{
+                        headerShown: false,
+                        cardStyle: { backgroundColor: '#FFF3E0' }
+                    }}
+                >
+                    <Stack.Screen name="Main" component={TabNavigator} />
+                    <Stack.Screen name="RecipeDetail" component={RecipeDetailScreen} />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </SafeAreaProvider>
     );
 }
